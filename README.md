@@ -13,9 +13,9 @@ GET `/{shorturl}}`
 
 Redirects the user to the long url
 
-POST `/addToDB?{data}`
+POST `/addToDB/{data}`
 
-Adds a link to the database by calling an AWS Lambda function to add to S3 Bucket
+Adds a entry to the database
 
 DELETE `/removeFromDB/{shorturl}`
 
@@ -25,12 +25,17 @@ POST `/update/{shorturl}`
 
 Updates the entry with new data
 
+POST `/addToBucket/{shorturl}`
+[//]: # (Not sure about what this formatting means)
 
+Creates an empty object in the S3 bucket with 'website redirect' metadata and the target url, with the corresponding shorturl
+
+POST `/removeFromBucket/{shorturl}`
+
+Removes the object corresponding to the shorturl given from the S3 bucket
 
 ## Database Schema
 
 | ID  | shorturl | longurl | active|
 | --  | -- | -- | -- |
 | 0 | home | https:/dsatlse.github.io | TRUE |
-
-
