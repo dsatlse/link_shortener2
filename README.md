@@ -26,7 +26,6 @@ POST `/update/{shorturl}`
 Updates the entry with new data
 
 POST `/addToBucket/{shorturl}`
-[//]: # (Not sure about what this formatting means)
 
 Creates an empty object in the S3 bucket with 'website redirect' metadata and the target url, with the corresponding shorturl
 
