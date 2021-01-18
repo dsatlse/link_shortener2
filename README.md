@@ -33,4 +33,6 @@ Updates the entry with new data
 | --  | -- | -- | -- |
 | 0 | home | https:/dsatlse.github.io | TRUE |
 
+## Development
 
++ 18/01/2020 - Flask + Firebase?
